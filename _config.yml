@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Sun-Hsing Ho (Samson)"
+title                    : "Samson's Homepage"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -25,9 +25,9 @@ author:
   avatar           : "profile.png"
   name             : "何孫興 | Sun-Hsing Ho (Samson)"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Undergraduate | Adjunct Assistant | EMT-1 | Cuber"
+  location         : "Taiwan (R.O.C.)"
+  employer         : "National Central University"
   uri              : # URL
   email            : "none@example.org" 
 
