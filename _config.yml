@@ -38,7 +38,7 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0002-1134-299X"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/"
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
 
