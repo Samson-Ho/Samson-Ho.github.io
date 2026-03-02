@@ -24,11 +24,11 @@ repository               : "https://github.com/Samson-Ho/Samson-Ho.github.io/"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Sun-Hsing Ho"
+  name             : "Sun-Hsing Ho  |  何孫興"
   pronouns         : # example: "she/her"  
   bio              : "A sophomore Undergraduate in Atmospheric Sciences."
   location         : "Taipei, Taiwan(R.O.C.)"
-  employer         : "National Taiwan University"
+  employer         : "Department of Atmospheric Sciences, NTU"
   uri              : # URL
   email            : "b13209041@g.ntu.edu.tw" 
 
