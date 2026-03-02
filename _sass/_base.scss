@@ -1,0 +1,17 @@
+/* Profile image hover effect */
+.profile-photo-container:hover .profile-photo.normal {
+  opacity: 0;           /* hide Photo A */
+}
+
+.profile-photo-container:hover .profile-photo.hover {
+  opacity: 1;           /* show Photo B */
+}
+
+.profile-photo-container:hover #image-overlay {
+  opacity: 1;           /* show overlay */
+}
+
+/* locate overlay */
+#image-overlay {
+  z-index: 10;          /* overlay on top of the image */
+}
