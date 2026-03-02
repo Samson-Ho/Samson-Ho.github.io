@@ -1,63 +1,77 @@
-<!-- === CUSTOM HOVER PHOTO CONTAINER === -->
-<div class="profile-photo-container" 
-     style="position: relative; display: inline-block; width: 100%; max-width: 200px; margin: 0 auto;">
+{% include base_path %}
+{% if page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
+{% endif %}
 
-  <!-- Photo A: Normal state -->
-  {% if author.avatar contains "://" %}
-    <img src="{{ author.avatar }}" 
-         class="profile-photo normal" 
-         alt="{{ author.name }}" 
-         fetchpriority="high"
-         style="width: 100%; height: auto; border-radius: 0; transition: opacity 0.4s ease; display: block;" />
-  {% else %}
-    <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" 
-         class="profile-photo normal" 
-         alt="{{ author.name }}" 
-         fetchpriority="high"
-         style="width: 100%; height: auto; border-radius: 0; transition: opacity 0.4s ease; display: block;" />
-  {% endif %}
-
-  <!-- Photo B: Hover state -->
-  <img src="{{ '/images/profile-hover.png' | prepend: base_path }}" 
-       class="profile-photo hover" 
-       alt="{{ author.name }} (hover effect)" 
-       fetchpriority="high"
-       style="position: absolute; top: 0; left: 0; width: 100%; height: auto; border-radius: 0; opacity: 0; transition: opacity 0.4s ease; display: block;" />
-
-  <!-- Your custom image-overlay -->
-  <div id="image-overlay" translate="no" 
-       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0; transition: opacity 0.4s ease; z-index: 10;">
-    
-    <div class="image-overlay-line" style="width: 14px; height: 5px; transform: translate(68px, 248px);">
-      <div class="image-overlay-text" style="transform: translate(-287.25px, -509.5px) scale(0.00906, 0.004883); -webkit-user-select: all;">2</div>
-      <div class="image-overlay-text" style="transform: translate(-303.9375px, -509.5px) scale(0.005435, 0.004883); -webkit-user-select: all;">0</div>
-      <div class="image-overlay-text" style="transform: translate(-300.8125px, -509.5px) scale(0.005435, 0.004883); -webkit-user-select: all;">0</div>
-      <div class="image-overlay-text" style="transform: translate(-286.875px, -509.5px) scale(0.005008, 0.004883); -webkit-user-select: all;">5</div><br>
-    </div>
-    
-    <div class="image-overlay-line" style="width: 16px; height: 6px; transform: translate(80px, 265px);">
-      <div class="image-overlay-text" style="transform: translate(-286.75px, -509px) scale(0.010785, 0.005859); -webkit-user-select: all;">2</div>
-      <div class="image-overlay-text" style="transform: translate(-303px, -509px) scale(0.005233, 0.005859); -webkit-user-select: all;">0</div>
-      <div class="image-overlay-text" style="transform: translate(-300px, -509px) scale(0.005233, 0.005859); -webkit-user-select: all;">0</div>
-      <div class="image-overlay-text" style="transform: translate(-302.5px, -509px) scale(0.005142, 0.005859); -webkit-user-select: all;">6</div>
-      <div class="image-overlay-text" style="transform: translate(-467.6328px, -509px) scale(0.001294, 0.005859); -webkit-user-select: all;">。</div>
-    </div>
-  </div>
-</div>
-<!-- === CUSTOM HOVER PHOTO CONTAINER END === -->
-    
-  </div>
+<div itemscope itemtype="http://schema.org/Person">
   
+  <!-- === AUTHOR AVATAR WRAPPER (模板原本的外層) === -->
+  <div class="author__avatar">
+    
+    <!-- === CUSTOM HOVER PHOTO CONTAINER (你的自訂功能) === -->
+    <!-- 照片統一為 1:1 正方形，hover 時切換 Photo B + overlay -->
+    <div class="profile-photo-container" 
+         style="position: relative; display: inline-block; width: 100%; max-width: 200px; margin: 0 auto;">
+      
+      <!-- Photo A: Normal state -->
+      {% if author.avatar contains "://" %}
+        <img src="{{ author.avatar }}" 
+             class="profile-photo normal" 
+             alt="{{ author.name }}" 
+             fetchpriority="high"
+             style="width: 100%; height: auto; border-radius: 0; transition: opacity 0.4s ease; display: block;" />
+      {% else %}
+        <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" 
+             class="profile-photo normal" 
+             alt="{{ author.name }}" 
+             fetchpriority="high"
+             style="width: 100%; height: auto; border-radius: 0; transition: opacity 0.4s ease; display: block;" />
+      {% endif %}
+
+      <!-- Photo B: Hover state -->
+      <img src="{{ '/images/profile-hover.png' | prepend: base_path }}" 
+           class="profile-photo hover" 
+           alt="{{ author.name }} (hover effect)" 
+           fetchpriority="high"
+           style="position: absolute; top: 0; left: 0; width: 100%; height: auto; border-radius: 0; opacity: 0; transition: opacity 0.4s ease; display: block;" />
+
+      <!-- Your custom image-overlay -->
+      <div id="image-overlay" translate="no" 
+           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0; transition: opacity 0.4s ease; z-index: 10;">
+        
+        <div class="image-overlay-line" style="width: 14px; height: 5px; transform: translate(68px, 248px);">
+          <div class="image-overlay-text" style="transform: translate(-287.25px, -509.5px) scale(0.00906, 0.004883); -webkit-user-select: all;">2</div>
+          <div class="image-overlay-text" style="transform: translate(-303.9375px, -509.5px) scale(0.005435, 0.004883); -webkit-user-select: all;">0</div>
+          <div class="image-overlay-text" style="transform: translate(-300.8125px, -509.5px) scale(0.005435, 0.004883); -webkit-user-select: all;">0</div>
+          <div class="image-overlay-text" style="transform: translate(-286.875px, -509.5px) scale(0.005008, 0.004883); -webkit-user-select: all;">5</div><br>
+        </div>
+        
+        <div class="image-overlay-line" style="width: 16px; height: 6px; transform: translate(80px, 265px);">
+          <div class="image-overlay-text" style="transform: translate(-286.75px, -509px) scale(0.010785, 0.005859); -webkit-user-select: all;">2</div>
+          <div class="image-overlay-text" style="transform: translate(-303px, -509px) scale(0.005233, 0.005859); -webkit-user-select: all;">0</div>
+          <div class="image-overlay-text" style="transform: translate(-300px, -509px) scale(0.005233, 0.005859); -webkit-user-select: all;">0</div>
+          <div class="image-overlay-text" style="transform: translate(-302.5px, -509px) scale(0.005142, 0.005859); -webkit-user-select: all;">6</div>
+          <div class="image-overlay-text" style="transform: translate(-467.6328px, -509px) scale(0.001294, 0.005859); -webkit-user-select: all;">。</div>
+        </div>
+      </div>
+    </div>
+    <!-- === CUSTOM HOVER PHOTO CONTAINER END === -->
+    
+  </div>
+  <!-- === AUTHOR AVATAR WRAPPER END === -->
+
+  <!-- === AUTHOR CONTENT (姓名、bio) === -->
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
+  <!-- === AUTHOR URLS (所有超連結) === -->
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
-      <!-- Font Awesome icons / Biographic information  -->
+      <!-- 以下全部是你原本的連結程式碼（我已完整保留） -->
       {% if author.location %}
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
       {% endif %}
@@ -71,7 +85,7 @@
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
 
-      <!-- Font Awesome and Academicons icons / Academic websites -->
+      <!-- Academic websites -->
       {% if author.academia %}
         <li><a href="{{ author.academia }}"><i class="ai ai-academia ai-fw icon-pad-right" aria-hidden="true"></i>Academia</a></li>
       {% endif %}
@@ -109,7 +123,7 @@
         <li><a href="{{ author.zotero }}"><i class="ai ai-zotero ai-fw icon-pad-right"></i>Zotero</a></li>
       {% endif %}
 
-      <!-- Font Awesome icons / Repositories and software development -->
+      <!-- Repositories -->
       {% if author.bitbucket %}
         <li><a href="https://bitbucket.org/{{ author.bitbucket }}"><i class="fab fa-fw fa-bitbucket icon-pad-right" aria-hidden="true"></i>Bitbucket</a></li>
       {% endif %}
@@ -129,7 +143,7 @@
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow icon-pad-right" aria-hidden="true"></i>Stackoverflow</a></li>
       {% endif %}      
 
-      <!-- Font Awesome icons / Social media -->
+      <!-- Social media -->
       {% if author.artstation %}
         <li><a href="https://www.artstation.com/{{ author.artstation }}"><i class="fab fa-fw fa-artstation icon-pad-right" aria-hidden="true"></i>Artstation</a></li>
       {% endif %}        
@@ -207,4 +221,5 @@
       {% endif %}      
     </ul>
   </div>
+  
 </div>
