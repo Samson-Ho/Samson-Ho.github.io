@@ -44,25 +44,30 @@
 
 
 /* ============================================= */
-/* CUSTOM PROFILE PHOTO HOVER EFFECT - FINAL STRENGTHENED VERSION */
-/* This must be placed at the VERY BOTTOM of assets/css/main.scss */
-/* It will be the last rule in the compiled CSS, overriding everything */
+/* CUSTOM PROFILE PHOTO HOVER EFFECT - SQUARE VERSION */
+/* Both photos now forced to 1:1 square (no circle) */
 /* ============================================= */
 
-/* Target the exact container inside the sidebar */
+/* Force the container to be square and control border */
+.author__avatar .profile-photo-container {
+  border-radius: 0;                    /* square shape for the whole frame */
+  overflow: hidden;                    /* prevent any overflow that causes ellipse */
+}
+
+/* Hover rules */
 .author__avatar .profile-photo-container:hover .profile-photo.normal {
-  opacity: 0 !important;           /* hide Photo A on hover */
+  opacity: 0 !important;               /* hide Photo A */
 }
 
 .author__avatar .profile-photo-container:hover .profile-photo.hover {
-  opacity: 1 !important;           /* show Photo B on hover */
+  opacity: 1 !important;               /* show Photo B */
 }
 
 .author__avatar .profile-photo-container:hover #image-overlay {
-  opacity: 1 !important;           /* show your custom overlay */
+  opacity: 1 !important;               /* show overlay */
 }
 
-/* Make sure overlay stays on top of both images */
+/* Overlay on top */
 #image-overlay {
   z-index: 10 !important;
 }
