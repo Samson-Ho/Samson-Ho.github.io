@@ -1,19 +1,68 @@
 {% include base_path %}
-
 {% if page.author and site.data.authors[page.author] %}
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
 <div itemscope itemtype="http://schema.org/Person">
-
   <div class="author__avatar">
-    {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
-    {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />
-    {% endif %}
-  </div>
+    
+    <!-- === CUSTOM HOVER PHOTO CONTAINER === -->
+    <!-- This div creates a relative positioning context so we can overlay Photo B and the overlay on top of Photo A -->
+    <div class="profile-photo-container" 
+         style="position: relative; display: inline-block; width: 100%; max-width: 200px; margin: 0 auto;">
+      
+      <!-- Photo A: Normal state (default image) -->
+      <!-- We keep the original Liquid logic so it supports both external URLs and local images from /images/ -->
+      {% if author.avatar contains "://" %}
+        <img src="{{ author.avatar }}" 
+             class="profile-photo normal" 
+             alt="{{ author.name }}" 
+             fetchpriority="high"
+             style="width: 100%; height: auto; border-radius: 50%; transition: opacity 0.4s ease; display: block;" />
+      {% else %}
+        <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" 
+             class="profile-photo normal" 
+             alt="{{ author.name }}" 
+             fetchpriority="high"
+             style="width: 100%; height: auto; border-radius: 50%; transition: opacity 0.4s ease; display: block;" />
+      {% endif %}
 
+      <!-- Photo B: Hover state (appears when mouse is over the container) -->
+      <!-- Upload Photo B as images/profile-hover.png -->
+      <img src="{{ '/images/profile-hover.png' | prepend: base_path }}" 
+           class="profile-photo hover" 
+           alt="{{ author.name }} (hover effect)" 
+           fetchpriority="high"
+           style="position: absolute; top: 0; left: 0; width: 100%; height: auto; border-radius: 50%; opacity: 0; transition: opacity 0.4s ease; display: block;" />
+
+      <!-- Your custom image-overlay (exactly as you provided) -->
+      <!-- This overlay fades in together with Photo B on hover -->
+      <!-- Note: The translate/scale values are pixel-specific to your original photo size. You may need to adjust numbers if the numbers "2005" and "2006。" are not perfectly aligned. -->
+      <div id="image-overlay" translate="no" 
+           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0; transition: opacity 0.4s ease; z-index: 10;">
+        
+        <div class="image-overlay-line" style="width: 14px; height: 5px; transform: translate(68px, 248px);">
+          <div class="image-overlay-text" style="transform: translate(-287.25px, -509.5px) scale(0.00906, 0.004883); -webkit-user-select: all;">2</div>
+          <div class="image-overlay-text" style="transform: translate(-303.9375px, -509.5px) scale(0.005435, 0.004883); -webkit-user-select: all;">0</div>
+          <div class="image-overlay-text" style="transform: translate(-300.8125px, -509.5px) scale(0.005435, 0.004883); -webkit-user-select: all;">0</div>
+          <div class="image-overlay-text" style="transform: translate(-286.875px, -509.5px) scale(0.005008, 0.004883); -webkit-user-select: all;">5</div><br>
+        </div>
+        
+        <div class="image-overlay-line" style="width: 16px; height: 6px; transform: translate(80px, 265px);">
+          <div class="image-overlay-text" style="transform: translate(-286.75px, -509px) scale(0.010785, 0.005859); -webkit-user-select: all;">2</div>
+          <div class="image-overlay-text" style="transform: translate(-303px, -509px) scale(0.005233, 0.005859); -webkit-user-select: all;">0</div>
+          <div class="image-overlay-text" style="transform: translate(-300px, -509px) scale(0.005233, 0.005859); -webkit-user-select: all;">0</div>
+          <div class="image-overlay-text" style="transform: translate(-302.5px, -509px) scale(0.005142, 0.005859); -webkit-user-select: all;">6</div>
+          <div class="image-overlay-text" style="transform: translate(-467.6328px, -509px) scale(0.001294, 0.005859); -webkit-user-select: all;">。</div>
+        </div>
+        
+      </div>
+      
+    </div>
+    <!-- === CUSTOM HOVER PHOTO CONTAINER END === -->
+    
+  </div>
+  
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
