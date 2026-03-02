@@ -41,3 +41,28 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+
+/* ============================================= */
+/* CUSTOM PROFILE PHOTO HOVER EFFECT - FINAL STRENGTHENED VERSION */
+/* This must be placed at the VERY BOTTOM of assets/css/main.scss */
+/* It will be the last rule in the compiled CSS, overriding everything */
+/* ============================================= */
+
+/* Target the exact container inside the sidebar */
+.author__avatar .profile-photo-container:hover .profile-photo.normal {
+  opacity: 0 !important;           /* hide Photo A on hover */
+}
+
+.author__avatar .profile-photo-container:hover .profile-photo.hover {
+  opacity: 1 !important;           /* show Photo B on hover */
+}
+
+.author__avatar .profile-photo-container:hover #image-overlay {
+  opacity: 1 !important;           /* show your custom overlay */
+}
+
+/* Make sure overlay stays on top of both images */
+#image-overlay {
+  z-index: 10 !important;
+}
