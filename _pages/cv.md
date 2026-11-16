@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* **B.S., Department of Atmospheric Sciences, National Taiwan University**, Taiwan
+* **B.S., [Department of Atmospheric Sciences, National Taiwan University](https://www.as.ntu.edu.tw/index.php/eng)**, Taiwan
   * September 2025 – Present (expected to graduate in summer 2028)
 
 * **B.S., Department of Atmospheric Sciences, National Central University**, Taiwan
@@ -19,7 +19,7 @@ Education
 
 Work / Intern Experience
 ======
-* **Summer Intern, KSL Lab** — June 2026 – August 2026
+* **Summer Intern, [KSL Lab](https://kuoshenglee.wixsite.com/ksllab/people)** — June 2026 – August 2026
   * Institute of Biomedical Sciences, Academia Sinica, Taiwan
   * Dry-lab position focusing on spike data inference using ML/DL and mathematical methods.
 
