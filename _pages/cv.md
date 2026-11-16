@@ -11,54 +11,18 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **B.S., Department of Atmospheric Sciences, National Taiwan University**, Taiwan
+  * September 2025 – Present (expected to graduate in summer 2028)
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **B.S., Department of Atmospheric Sciences, National Central University**, Taiwan
+  * September 2024 – August 2025 (transferred to NTU)
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Work / Intern Experience
+======
+* **Summer Intern, KSL Lab** — June 2026 – August 2026
+  * Institute of Biomedical Sciences, Academia Sinica, Taiwan
+  * Dry-lab position focusing on spike data inference using ML/DL and mathematical methods.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* **Adjunct Assistant, IMAQS Laboratory** — July 2025 – February 2026
+  * Department of Atmospheric Sciences, National Central University, Taiwan
+  * Built a Temporal Fusion Transformer machine learning architecture in Python on Linux workstations to evaluate model performance in the Air Quality Forecast System. Processed massive meteorological datasets and optimized model hyperparameters.
