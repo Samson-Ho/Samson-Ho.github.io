@@ -9,10 +9,11 @@ redirect_from:
 
 About Me
 ======
-I am an undergraduate student in the [Department of Atmospheric Sciences at National Taiwan University](https://www.as.ntu.edu.tw/index.php/eng), expected to graduate in summer 2028. I started my studies in atmospheric sciences at National Central University before transferring to NTU in 2025.
+I am an junior undergraduate student in the [Department of Atmospheric Sciences at National Taiwan University](https://www.as.ntu.edu.tw/index.php/eng), expected to graduate in summer 2028. And I am currently a undergraduate intern in [Prof. Hung-Chi Kuo's Dynamics and Modeling Laboratory Lab](http://kelvin.as.ntu.edu.tw)
 
-My interests lie at the intersection of machine learning and scientific data. At the IMAQS Laboratory (National Central University), I built a Temporal Fusion Transformer model for air quality forecasting. In summer 2026, I worked as a summer intern at the [KSL Lab](https://kuoshenglee.wixsite.com/ksllab/people), Institute of Biomedical Sciences, Academia Sinica, on spike data inference using ML/DL and mathematical methods.
+
+My interests lie at the intersection of machine learning and scientific data. At the IMAQS Laboratory, I built a Temporal Fusion Transformer model for air quality forecasting. In summer 2026, I worked as a summer intern at the [KSL Lab](https://kuoshenglee.wixsite.com/ksllab/people), IBMS, Academia Sinica, on spike data inference using ML/DL and mathematical methods.
 
 Out of the Lab
 ======
-Coming soon.
+I am an enthusiastic emergency medical technician, and serve as an EMT volunteer in [Taipei City Fire Department](https://www.119.gov.taipei). I am also a speedcuber who is interested in solving Rubik's cube, typically Rubik's Clock. 
