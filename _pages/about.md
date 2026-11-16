@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Sun-Hsing Ho (Samson)"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
