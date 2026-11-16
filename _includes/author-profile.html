@@ -10,7 +10,12 @@
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
     {% else %}
+      <span class="author__avatar-swap">
     	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />
+      {% if author.avatar_hover %}
+        <img src="{{ author.avatar_hover | prepend: "/images/" | prepend: base_path }}" class="author__avatar-hover" alt="{{ author.name }}" aria-hidden="true" />
+      {% endif %}
+      </span>
     {% endif %}
   </div>
 

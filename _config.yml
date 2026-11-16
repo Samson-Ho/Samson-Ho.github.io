@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Samson Ho"
+title                    : "Sun-Hsing Ho (Samson)"
 title_separator          : "-"
-name                     : &name "Samson Ho"
-description              : &description "Samson Ho's personal website"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Sun-Hsing Ho (Samson)"
+description              : &description "Sun-Hsing Ho (Samson)'s personal website"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://samson-ho.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -23,8 +23,9 @@ repository               : "Samson-Ho/Samson-Ho.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Samson Ho"
+  avatar           : "cover.jpeg"
+  avatar_hover     : "myself.jpeg"   # shown when the cursor is over the avatar
+  name             : "Sun-Hsing Ho (Samson)"
   pronouns         : # example: "she/her"  
   bio              : ""
   location         : 
