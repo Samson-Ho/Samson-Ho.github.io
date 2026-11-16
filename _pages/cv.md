@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* **B.S., [Department of Atmospheric Sciences, National Taiwan University](https://www.as.ntu.edu.tw/index.php/eng)**, Taiwan
+* **B.S., [Department of Atmospheric Sciences]((https://www.as.ntu.edu.tw/index.php/eng)), National Taiwan University**, Taiwan
   * September 2025 – Present (expected to graduate in summer 2028)
 
 * **B.S., Department of Atmospheric Sciences, National Central University**, Taiwan
