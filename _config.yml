@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Sun-Hsing Ho (Samson)"
+title                    : "Sun-Hsing Ho | Samson's Web"
 title_separator          : "-"
 name                     : &name "Sun-Hsing Ho (Samson)"
 description              : &description "Sun-Hsing Ho (Samson)'s personal website"   # Update this with a general description of your site, this is the default if not overridden by a page
