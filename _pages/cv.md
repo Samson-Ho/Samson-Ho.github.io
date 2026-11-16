@@ -20,7 +20,7 @@ Education
 Work / Intern Experience
 ======
 * **Undergraduate Intern, [Dynamics and Modeling Laboratory](http://kelvin.as.ntu.edu.tw)** — November 2026 – Present
-  * PI: Hung-Chi Kuo
+  * PI: Chair Prof. Hung-Chi Kuo
   * Department of Atmospheric Sciences, National Taiwan University, Taiwan
 
 * **Summer Intern, [KSL Lab](https://kuoshenglee.wixsite.com/ksllab/people)** — June 2026 – August 2026
