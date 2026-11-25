@@ -14,6 +14,6 @@ I am a junior undergraduate student in the Department of Atmospheric Sciences at
 
 My interests lie at the intersection of machine learning and scientific data. At the IMAQS Laboratory, I built a Temporal Fusion Transformer model for air quality forecasting. In summer 2026, I worked as a summer intern at the [KSL Lab](https://kuoshenglee.wixsite.com/ksllab/people), IBMS, Academia Sinica, on spike data inference using ML/DL and mathematical methods.
 
-Out of the Lab
+Beyond the Lab
 ======
-I am an enthusiastic emergency medical technician, and serve as an EMT volunteer in [Taipei City Fire Department](https://www.119.gov.taipei). I am also a speedcuber who is interested in solving Rubik's cube, especially Rubik's Clock. 
+I am an enthusiastic emergency medical technician, and serve as a volunteer EMT in [Taipei City Fire Department](https://www.119.gov.taipei), providing pre-hospital medical care to patients. I am also a speedcuber who is interested in solving Rubik's cube, especially Rubik's Clock. 
